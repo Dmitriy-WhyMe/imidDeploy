@@ -14,6 +14,7 @@ import Link from 'next/link'
 
 const Gallery = () => {
 
+    /*
     const [activeTab, setActiveTab] = useState("photo")
 
     const handleTab1 = () => {
@@ -22,6 +23,7 @@ const Gallery = () => {
     const handleTab2 = () => {
         setActiveTab("video")
     }
+    */
 
     const [slider, setSlider] = useState(null)
     const [slideNumber, setSlideNumber] = useState(1)
@@ -31,22 +33,19 @@ const Gallery = () => {
 		navigation: false,
 		speed: 200,
 		slidesPerView: 1,
-        spaceBetween: 25,
-		autoplay: {
-			delay: 5000
-		},
+        spaceBetween: 25
 	}
 
     return (
         <div className={styles.gallery}>
             <Container>
                 <div className={styles.flex}>
-                    <TitleLine title={"галерея"} widthStatick={157}/>
+                    <TitleLine title={"галерея"}/>
 
                     <div className={styles.block}>
 
                         <div className={styles.pagination}>
-                            <div className={styles.paginationActve}>{slideNumber < 10 ? '0' : null}{slideNumber}</div>
+                            <div className={styles.paginationActve}>01</div>
                             <div className={styles.paginationAll}>/03</div>
                         </div>
 
@@ -72,12 +71,12 @@ const Gallery = () => {
 
                 </div>
             </Container>
-            {/*activeTab === "photo" ? <FirstTab /> : <SecondTab />*/}
+            
             <div className={styles.slider}>
                 <Swiper
                     {...swiperConfig}
                     onSwiper={(swiper) => setSlider(swiper)}
-                    onSlideChange={(slider) => setSlideNumber(slider.realIndex + 1)}
+                    //onSlideChange={(slider) => setSlideNumber(slider.realIndex + 1)}
                 >
 
                     <SwiperSlide>
@@ -104,14 +103,16 @@ const Gallery = () => {
                     
                     <div className={styles.tabs}>
                         <button 
-                            className={activeTab === "photo" ? styles.activeTab : styles.default}
-                            onClick={handleTab1}
+                            className={styles.activeTab}
+                            //className={activeTab === "photo" ? styles.activeTab : styles.default}
+                            //onClick={handleTab1}
                         >
                             Фото
                         </button>
                         <button 
-                            className={activeTab === "video" ? styles.activeTab : styles.default}
-                            onClick={handleTab2}
+                            className={styles.default}
+                            //className={activeTab === "video" ? styles.activeTab : styles.default}
+                            //onClick={handleTab2}
                         >
                             Видео
                         </button>
