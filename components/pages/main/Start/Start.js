@@ -16,11 +16,11 @@ const Start = () => {
 
 				<div className={styles.text}>
 					
-					<div className={styles.flagImg}>
-						<Image alt="" src={flag} width={69} height={53} />
+					<div className={styles.title}>
+						<span>Российское<div className={styles.flagImg}><Image alt="" src={flag} width={69} height={53} /></div></span>
+						<span>высокотехнологичное</span>
+						<span>производство</span>
 					</div>
-
-					<h1>Российское высокотехнологичное производство</h1>
 				</div>
 
 			</Container>

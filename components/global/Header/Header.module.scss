@@ -1,6 +1,7 @@
 @import '../../../css/common.scss';
 
-.header{
+.header, .headerActive{
+    transition: 0.2s;
     font-family: $fontDop;
     padding: 30px 0;
     position: absolute;
@@ -89,7 +90,7 @@
             a{
                 font-family: $fontDop;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 14px;
                 line-height: 17px;
                 text-transform: uppercase;
@@ -109,7 +110,7 @@
         .language{
             z-index: 2;
             a {
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 14px;
                 line-height: 17px;
                 text-transform: uppercase;
@@ -127,10 +128,18 @@
             margin-right: 20px;
             transition: 0.2s;
             height: 17px;
-            &:hover{
+            svg{
                 path{
-                    fill: $orange;
+                    transition: 0.2s;
                 }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: $orange;
+                    }
+                }
+                
             }
             a{
                 line-height: 100%;
@@ -141,6 +150,11 @@
             z-index: 2;
             transition: 0.2s;
             height: 17px;
+            svg{
+                path{
+                    transition: 0.2s;
+                }
+            }
             &:hover{
                 path{
                     fill: $orange;
@@ -297,4 +311,11 @@
     .mobileMenuCheck:checked ~ .mobileMenu .contacts div{
         z-index: 1;
     }
+}
+
+.headerActive{
+    opacity: 1;
+    transition: 0.2s;
+    background: $swamp;
+    position: fixed;
 }

@@ -60,6 +60,13 @@
                 color: black;
                 border: 1px solid white;
                 transition: 0.2s;
+                svg {
+                    transition: 0.2s;
+                    path{
+                        transition: 0.2s;
+                    }
+                }
+                
                 &:hover{
                     color: white;
                     background: $swamp;
@@ -92,7 +99,7 @@
                 @media only screen and (max-width: $mobile) {
                    font-size: 12px; 
                    max-width: 160px;
-                   font-weight: 700;
+                   font-weight: 600;
                 }
             }
 
@@ -136,7 +143,7 @@
                 font-size: 18px;
                 @media only screen and (max-width: $mobile) {
                     font-size: 12px;
-                    font-weight: 700;
+                    font-weight: 600;
                 }
             }
         }

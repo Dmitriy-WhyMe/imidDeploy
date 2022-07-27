@@ -38,99 +38,108 @@ const NewsSlider = () => {
                     onSwiper={(swiper) => setSlider(swiper)}
                 >
 
-                    <SwiperSlide>
-                        <div className={styles.slide}>
-							<div className={styles.date}>5.06.2022</div>
-							<h4>Приглашаем Вас посетить наши стенды на ближайших выставках:<ul><li>Rosmould</li><li>Rosplast</li></ul></h4>
-							
-							<div className={styles.location}>
-								<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
-								<p>Павильон 2, зал 5, стенд 1E26</p>
-							</div>
+					<SwiperSlide>
+						<Link href="#">
+							<a className={styles.links}>
+								<div className={styles.slide}>
+									<div className={styles.date}>5.06.2022</div>
+									<h4>Приглашаем Вас посетить наши стенды на ближайших выставках:<ul><li>Rosmould</li><li>Rosplast</li></ul></h4>
+									
+									<div className={styles.location}>
+										<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
+										<p>Павильон 2, зал 5, стенд 1E26</p>
+									</div>
 
-							<div className={styles.period}>
-								<p>7-9 июня</p>
-								<Link href="#"><a>Подробнее</a></Link>
-							</div>
+									<div className={styles.period}>
+										<p>7-9 июня</p>
+										<div className={styles.btn}>Подробнее</div>
+									</div>
+								</div>
+							</a>
+						</Link>
+                    </SwiperSlide>
+
+					<SwiperSlide>
+						<Link href="#">
+							<a className={styles.links}>
+								<div className={styles.slide}>
+									<div className={styles.date}>5.06.2022</div>
+									<h4>RosUpack</h4>
+
+									<div className={styles.location}>
+										<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
+										<p>Павильон 2, зал 5, стенд 1E26</p>
+									</div>
+
+									<div className={styles.period}>
+										<p>7-9 июня</p>
+										<div className={styles.btn}>Подробнее</div>
+									</div>
+								</div>
+							</a>
+						</Link>
+                    </SwiperSlide>
+					
+					<SwiperSlide>
+						<Link href="#">
+							<a className={styles.links}>
+								<div className={styles.slide}>
+									<div className={styles.date}>5.06.2022</div>
+									<h4>RosUpack</h4>
+									<div className={styles.text}>В связи с расширением производства и запуском новых проектов в компании ИМИД открыты следующие вакансии: наладчик термопластавтоматов, инженер-электрик (электронщик), слесарь-инструментальщик, конструктор пресс-форм</div>
+									
+									<div className={styles.period}>
+										<div className={styles.btn}>Подробнее</div>
+									</div>
+								</div>
+							</a>
+						</Link>
+                    </SwiperSlide>
+					
+				</Swiper>
+					{/*
+					<SwiperSlide>
+                        <div className={styles.slide}>
+							<Link href="">
+								<a>
+									<div>
+										<div className={styles.date}>5.06.2022</div>
+										<h4>RosUpack</h4>
+
+										<div className={styles.location}>
+											<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
+											<p>Павильон 2, зал 5, стенд 1E26</p>
+										</div>
+
+										<div className={styles.period}>
+											<p>7-9 июня</p>
+											<a>Подробнее</a>
+										</div>
+									</div>
+								</a>
+							</Link>
 						</div>
                     </SwiperSlide>
 
 					<SwiperSlide>
                         <div className={styles.slide}>
-							<div className={styles.date}>5.06.2022</div>
-							<h4>RosUpack</h4>
-
-							<div className={styles.location}>
-								<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
-								<p>Павильон 2, зал 5, стенд 1E26</p>
-							</div>
-
-							<div className={styles.period}>
-								<p>7-9 июня</p>
-								<Link href="#"><a>Подробнее</a></Link>
-							</div>
+							<Link href="">
+								<a>
+									<div>
+										<div className={styles.date}>5.06.2022</div>
+										<h4>RosUpack</h4>
+										<div className={styles.text}>В связи с расширением производства и запуском новых проектов в компании ИМИД открыты следующие вакансии: наладчик термопластавтоматов, инженер-электрик (электронщик), слесарь-инструментальщик, конструктор пресс-форм</div>
+										
+										<div className={styles.period}>
+											<a>Подробнее</a>
+										</div>
+									</div>
+								</a>
+							</Link>
 						</div>
                     </SwiperSlide>
-
-					<SwiperSlide>
-                        <div className={styles.slide}>
-							<div className={styles.date}>5.06.2022</div>
-							<h4>RosUpack</h4>
-							<div className={styles.text}>В связи с расширением производства и запуском новых проектов в компании ИМИД открыты следующие вакансии: наладчик термопластавтоматов, инженер-электрик (электронщик), слесарь-инструментальщик, конструктор пресс-форм</div>
-							
-							<div className={styles.period}>
-								<Link href="#"><a>Подробнее</a></Link>
-							</div>
-						</div>
-                    </SwiperSlide>
-
-					<SwiperSlide>
-                        <div className={styles.slide}>
-							<div className={styles.date}>5.06.2022</div>
-							<h4>Приглашаем Вас посетить наши стенды на ближайших выставках:<ul><li>Rosmould</li><li>Rosplast</li></ul></h4>
-							
-							<div className={styles.location}>
-								<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
-								<p>Павильон 2, зал 5, стенд 1E26</p>
-							</div>
-							
-							<div className={styles.period}>
-								<p>7-9 июня</p>
-								<Link href="#"><a>Подробнее</a></Link>
-							</div>
-						</div>
-                    </SwiperSlide>
-
-					<SwiperSlide>
-                        <div className={styles.slide}>
-							<div className={styles.date}>5.06.2022</div>
-							<h4>RosUpack</h4>
-
-							<div className={styles.location}>
-								<p>Москва, МВЦ «КРОКУС-ЭКСПО» </p>
-								<p>Павильон 2, зал 5, стенд 1E26</p>
-							</div>
-
-							<div className={styles.period}>
-								<p>7-9 июня</p>
-								<Link href="#"><a>Подробнее</a></Link>
-							</div>
-						</div>
-                    </SwiperSlide>
-
-					<SwiperSlide>
-                        <div className={styles.slide}>
-							<div className={styles.date}>5.06.2022</div>
-							<h4>RosUpack</h4>
-							<div className={styles.text}>В связи с расширением производства и запуском новых проектов в компании ИМИД открыты следующие вакансии: наладчик термопластавтоматов, инженер-электрик (электронщик), слесарь-инструментальщик, конструктор пресс-форм</div>
-							
-							<div className={styles.period}>
-								<Link href="#"><a>Подробнее</a></Link>
-							</div>
-						</div>
-                    </SwiperSlide>
-                    
-                </Swiper>
+					*/}
+                
             </div>
 
 			<div className={styles.btns}>

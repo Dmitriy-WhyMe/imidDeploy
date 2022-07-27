@@ -27,6 +27,7 @@
     }
 
     .img{
+        max-width: 114px;
         @media only screen and (max-width: $mobile) {
             max-width: 96px;
             width: 100%;

@@ -118,7 +118,7 @@ const Gallery = () => {
                         </button>
                     </div>
 
-                    <Link href="#"><button className={styles.btn}>смотреть всё</button></Link>
+                    <Link href="#"><button className={styles.btn}>смотреть все</button></Link>
                 </div>
             </Container>
             

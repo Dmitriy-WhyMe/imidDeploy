@@ -22,4 +22,16 @@
     &:hover{
         padding: 0 30px;    
     }
+
+    p{
+        max-width: 351px;
+        width: 100%;
+    }
+    
+    .img{
+        max-width: 100px;
+        @media only screen and (max-width: $mobile) {
+            max-width: 73px;
+        }
+    }
 }

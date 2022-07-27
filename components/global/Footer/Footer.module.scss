@@ -84,7 +84,7 @@
                     color: white;
                     flex-direction: column;
                     gap: 4px;
-                    font-weight: 700;
+                    font-weight: 600;
                     font-size: 9px;
                     line-height: 140%;
                     text-transform: uppercase;
@@ -128,7 +128,7 @@
                     width: 100%;
                     background: $orange;
                     color: white;
-                    font-weight: 700;
+                    font-weight: 600;
                     font-size: 12px;
                     line-height: 140%;
                     text-transform: uppercase;
@@ -203,6 +203,10 @@
                             text-transform: uppercase;
                             color: #000000;
                             font-family: $fontDop;
+                            transition: 0.2s;
+                            &:hover{
+                                color: $orange;
+                            }
                         }
                     }
                 }
@@ -300,7 +304,7 @@
 
                     h5{
                         margin: 0;
-                        font-weight: 700;
+                        font-weight: 600;
                         font-size: 12px;
                         line-height: 140%;
                         text-transform: uppercase;
@@ -331,7 +335,7 @@
                             }
                             @media only screen and (max-width: $mobile) {
                                 font-size: 12px;
-                                font-weight: 700;
+                                font-weight: 600;
                             }
                         }
                     }
@@ -359,7 +363,7 @@
                 color: black;
                 @media only screen and (max-width: $mobile) {
                     font-size: 12px;
-                    font-weight: 700;          
+                    font-weight: 600;          
                 }
             }
 
@@ -425,7 +429,7 @@
                     width: 100%;
                     background: $swamp;
                     color: white;
-                    font-weight: 700;
+                    font-weight: 600;
                     font-size: 12px;
                     line-height: 140%;
                     text-transform: uppercase;
@@ -458,6 +462,10 @@
                     a{
                         color: #898989;
                         text-decoration: underline;
+                        transition: 0.2s;
+                        &:hover{
+                            text-decoration: none;
+                        }
                     }
         
                     input[type="checkbox"]{

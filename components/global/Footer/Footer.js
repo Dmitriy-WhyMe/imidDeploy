@@ -62,7 +62,7 @@ const Footer = () => {
                             </div>
 
                             <div className={styles.agreement}>
-                                <input type="checkbox" id="circleTwo" required/>
+                                <input type="checkbox" id="circleTwo" required defaultChecked={true}/>
                                 <label htmlFor="circleTwo">Согласен на </label>
                                 <a href="#">обработку персональных данных</a>
                             </div>

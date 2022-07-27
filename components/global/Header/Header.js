@@ -23,7 +23,7 @@ const Header = () => {
 
 
   return (
-    <header className={styles.header} style={scroll ? {background: "#0E302A", position: "fixed"} : {background: "inherit", position: "absolute"}}>
+    <header className={scroll ? styles.headerActive : styles.header}>
         <div className={styles.logoRight}><LogoRight /></div>
         <Container>
             <div className={styles.logoContainer}>

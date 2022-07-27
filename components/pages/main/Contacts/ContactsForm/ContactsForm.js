@@ -40,7 +40,7 @@ const ContactsForm = () => {
 						placeholder=" "
 					/>
 					{errors.name && console.log(errors.name.message)}
-					<label className={styles.formLabel}>+7 (      )</label>
+					<label className={styles.formLabel}>Телефон</label>
 				</div>
 				
 				<div className={styles.formItem}>
@@ -76,7 +76,7 @@ const ContactsForm = () => {
 				</div>
 
 				<div className={styles.agreement}>
-					<input type="checkbox" id="circle" required/>
+					<input type="checkbox" id="circle" required defaultChecked={true}/>
 					<label htmlFor="circle">Согласен на </label>
 					<a href="#">обработку персональных данных</a>
 				</div>

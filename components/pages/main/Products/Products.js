@@ -35,7 +35,7 @@ const Products = () => {
                 </div>
 
                 <div className={styles.casting}>
-                    <div>
+                    <div className={styles.castingBlock}>
                         <Link href="#"><a className={styles.title}>Литьевое производство<Arrow /></a></Link>
                         <ProductsItem title="Изготовление пресс форм" imgLink={SevenImg} link="#"/>
                         <ProductsItem title="Колпачки нового поколения" imgLink={EightImg} link="#"/>

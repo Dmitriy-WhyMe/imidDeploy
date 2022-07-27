@@ -25,27 +25,31 @@
             bottom: 52px;
         }
 
-        .flagImg{
-            position: absolute;
-            left: 349px;
-            top: 16px;
-            @media only screen and (max-width: $mobile) {
-                left: 202px;
-                top: 4px;
-                max-width: 41px;
-            }
-        }
-        
-        h1{
+        .title{
             font-family: $fontMain;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 55px;
             line-height: 140%;
             text-transform: uppercase;
             color: white;
+            display: flex;
+            flex-direction: column;
             @media only screen and (max-width: $mobile) {
                 font-size: 34px;
                 line-height: 120%;
+            }
+
+            span{
+                .flagImg{
+                    position: absolute;
+                    left: 349px;
+                    top: 5px;
+                    @media only screen and (max-width: $mobile) {
+                        left: 202px;
+                        top: 5px;
+                        max-width: 41px;
+                    }
+                }
             }
         }
         
