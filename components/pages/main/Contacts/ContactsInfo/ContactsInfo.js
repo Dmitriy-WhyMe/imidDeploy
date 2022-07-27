@@ -1,12 +1,10 @@
 import Link from 'next/link'
-import MapIco from '../../../../icons/mapIco'
+import MapIco from '../../../../icons/MapIco'
 import styles from './ContactsInfo.module.scss'
 
 const ContactsInfo = () => {
 	return (
 		<div className={styles.contactsInfo}>
-
-			
 
 			<div className={styles.itemFirst}>
 
