@@ -1,4 +1,5 @@
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"
+import InputMask from 'react-input-mask'
 import styles from './ContactsForm.module.scss'
 
 const ContactsForm = () => {
@@ -30,7 +31,8 @@ const ContactsForm = () => {
 				</div>
 
 				<div className={styles.formItem}>
-					<input 
+					<InputMask 
+						mask="+7(999)999-99-99" 
 						className={styles.formInput}
 						{...register("name", {
 							required: "Введите телефон" 
@@ -38,7 +40,8 @@ const ContactsForm = () => {
 						type="tel"
 						required
 						placeholder=" "
-					/>
+					>
+					</InputMask>
 					{errors.name && console.log(errors.name.message)}
 					<label className={styles.formLabel}>Телефон</label>
 				</div>
