@@ -1,0 +1,151 @@
+@import "../../../../../css/common";
+
+.contactsInfo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $fontDop;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $mobile) {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    .itemTwo .right .mail{
+        margin-top: 10px;
+        @media only screen and (max-width: $mobile) {
+            margin-top: 0;
+        }
+    }
+
+    .itemFirst, .itemTwo, .itemThree{
+        border-top: 1px solid white;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 525px;
+        width: 100%;
+        @media only screen and (max-width: $mobile) {
+            padding-bottom: 30px;
+        }
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-transform: uppercase;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 10px;
+                }
+            }
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                background: white;
+                min-width: 103px;
+                height: 30px;
+                gap: 5px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 130%;
+                color: black;
+                border: 1px solid white;
+                transition: 0.2s;
+                &:hover{
+                    color: white;
+                    background: $swamp;
+                    svg path{
+                        fill: white;
+                    }
+                }
+                @media only screen and (max-width: $mobile) {
+                    min-width: 97px;
+                    height: 20px;
+                    max-width: 97px;
+                }
+            }
+        }
+
+        .right{
+            max-width: 231px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+
+            p{
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 140%;
+                text-align: right;
+                font-family: $fontDop;
+                @media only screen and (max-width: $mobile) {
+                   font-size: 12px; 
+                   max-width: 160px;
+                   font-weight: 700;
+                }
+            }
+
+            a{
+                color: white;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-transform: uppercase;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .itemFirst{
+        height: 105px;
+        @media only screen and (max-width: $mobile) {
+            height: auto;  
+        }
+    }
+
+    .itemTwo{
+        height: 160px;
+        @media only screen and (max-width: $mobile) {
+            height: auto;
+        }
+
+        .left{
+            p{
+                max-width: 220px;
+            }
+        }
+
+        .right{
+
+            .number{
+                font-weight: normal;
+                font-family: $fontDop;
+                font-size: 18px;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+    .itemThree{
+        height: 85px;
+        @media only screen and (max-width: $mobile) {
+            height: auto; 
+        }
+    }
+}

@@ -1,0 +1,221 @@
+@import "../../../../../css/common";
+
+.form{
+    max-width: 281px;
+    width: 100%;
+    @media only screen and (max-width: $mobile) {
+        max-width: 100%;
+    }
+
+    h4{
+        margin-top: 34px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        max-width: 253px;
+        font-family: $fontDop;
+        margin-bottom: 25px;
+        @media only screen and (max-width: $mobile) {
+            max-width: 268px; 
+            font-size: 16px;
+            line-height: 130%;
+            margin-bottom: 19px;
+            margin-top: 0;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .agreement{
+            max-width: 139px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 130%;
+            color: #CCCCCC;
+            font-family: $fontDop;
+            margin-left: 26px;
+            margin-top: -5px;
+            @media only screen and (max-width: $mobile) {
+                max-width: 100%;
+            }
+
+            a{
+                color: #CCCCCC;
+                text-decoration: underline;
+            }
+
+            input[type="checkbox"]{
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+
+            input[type="checkbox"]:checked + label, 
+            input[type="checkbox"]:not(:checked) + label{
+                position: relative;
+                cursor: pointer;
+            }
+
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                content: "";
+                position: absolute;
+                left: -26px;
+                top: 0px;
+                width: 16px;
+                height: 16px;
+                background-color: $orange;
+            }
+
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after{
+                content: "";
+                position: absolute;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                left: -23.5px;
+                top: 2px;
+                width: 12px;
+                height: 12px;
+                background-repeat: no-repeat;
+                background-image: url("../../../../../images/mainPage/Vector\ 4.svg");
+            }
+
+            input[type="radio"]:checked + label:after{
+                left: 6px;
+                top: 6px;
+                width: 11px;
+                height: 11px;
+                border-radius: 100%;
+                background-color: #e145a3;
+            }
+
+            input[type="checkbox"]:not(:checked) + label:after {
+                opacity: 0;
+            }
+
+            input[type="checkbox"]:checked + label:after{
+                opacity: 1;
+            }
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 151px;
+            height: 45px;
+            width: 100%;
+            background: white;
+            color: $swamp;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 140%;
+            text-transform: uppercase;
+            margin-top: 25px;
+            transition: 0.2s;
+            font-family: $fontDop;
+            &:hover{
+                background: $orange;
+                color: white;
+            }
+            @media only screen and (max-width: $mobile) {
+                margin-top: 15px;
+                max-width: 100%;
+            }
+        }
+
+        .formInput:focus+.formLabel, .formInput:not(:placeholder-shown)+.formLabel{
+            bottom: 25px;
+            font-size: 12px;
+        }
+
+        .formTextarea:focus+.formLabelTextArea, .formTextarea:not(:placeholder-shown)+.formLabelTextArea{
+            top: -20px;
+            font-size: 12px;
+        }
+
+        .formItem{
+            position: relative;
+
+            .formTextarea{
+                height: 66px;
+                width: 100%;
+                background: inherit;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 130%;
+                font-family: $fontDop;
+                color: #CCCCCC;
+                position: relative;
+                padding: 0 5px;
+                resize: none;
+            }
+
+            .formInput{
+                height: 26px;
+                width: 100%;
+                background: inherit;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 130%;
+                font-family: $fontDop;
+                color: #CCCCCC;
+                position: relative;
+                padding: 0 5px;
+            }
+
+            .formLabel{
+                position: absolute;
+                pointer-events: none;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 130%;
+                font-family: $fontDop;
+                transition: .2s;
+                color: #CCCCCC;
+            }
+
+            .formLabelTextArea{
+                position: absolute;
+                pointer-events: none;
+                left: 5px;
+                right: 5px;
+                top: 0px;
+                white-space: nowrap;
+                overflow: hidden;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 130%;
+                font-family: $fontDop;
+                transition: .2s;
+                color: #CCCCCC;
+            }
+
+        }
+        
+    }
+
+}

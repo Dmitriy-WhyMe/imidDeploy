@@ -1,0 +1,526 @@
+@import '../../../css/common.scss';
+
+.footer{
+    background: #F5F5F5;
+    padding-top: 103px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    @media only screen and (max-width: $mobile) {
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
+
+    .logoRight{
+        position: absolute;
+        right: 30px;
+        top: 125px;
+        @media only screen and (max-width: $mobile) {
+            right: 20px;
+            top: 48px;
+        }
+
+        svg{
+            @media only screen and (max-width: $mobile) {
+                max-width: 128px;
+            }
+        }
+    }
+
+    .logo{
+        position: relative;
+        display: flex;
+
+        svg{
+            z-index: 2;
+            position: relative;
+            @media only screen and (max-width: $mobile) {
+                max-width: 118px;
+                height: 19px;            
+            }
+        }
+
+        .logoLine{
+            width: 100%;
+            background: $orange;
+            height: 3px;
+            position: absolute;
+            z-index: 0;
+            bottom: 15px;
+            right: -200px;
+            @media only screen and (max-width: $mobile) {
+                bottom: 8px;
+                right: -20px;
+            }
+        }
+    }
+
+    .footerBottom{
+        display: flex;
+        @media only screen and (max-width: $mobile) {
+            flex-direction: column-reverse;
+        }
+
+        .mobile{
+            display: none;
+            @media only screen and (max-width: $mobile) {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                height: 50px;
+                background: $swamp;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                z-index: 99999999999999;
+                a{
+                    max-width: 25%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    flex-direction: column;
+                    gap: 4px;
+                    font-weight: 700;
+                    font-size: 9px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    font-family: $fontDop;
+                    &:nth-child(2){
+                        border-left: 1px solid #898989;
+                        border-right: 1px solid #898989;
+                    }
+                    &:nth-child(3){
+                        border-right: 1px solid #898989;
+                    }
+                }
+            }
+        }
+
+        .block{
+            max-width: 406px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 84px;
+            @media only screen and (max-width: $mobile) {
+                flex-direction: column;
+                max-width: 100%;
+                gap: 44px;
+            }
+
+            .contacts form{
+                max-width: 220px;
+                width: 100%;
+                @media only screen and (max-width: $mobile) {
+                    max-width: 100%;
+                }
+
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 100%;
+                    height: 45px;
+                    width: 100%;
+                    background: $orange;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    margin-top: 48px;
+                    transition: 0.2s;
+                    font-family: $fontDop;
+                    &:hover{
+                        background: $swamp;
+                        color: white;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        margin-top: 30px;           
+                    }
+                }
+
+                .social{
+                    display: flex;
+                    gap: 32px;
+
+                    .right{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 15px;
+                        min-width: 55px;
+                        width: 100%;
+                        @media only screen and (max-width: $mobile) {
+                           gap: 12px; 
+                        }
+
+                        a{
+                            min-width: 18.1px;
+                            min-height: 18.1px;
+                            max-width: 18.1px;
+                            max-height: 18.1px;
+                            @media only screen and (max-width: $mobile) {
+                                min-width: 27px;
+                                min-height: 27px;
+                                max-width: 27px;
+                                max-height: 27px;
+                            }
+
+                            svg{
+                                transition: 0.2s;
+                                @media only screen and (max-width: $mobile) {
+                                    min-width: 27px;
+                                    min-height: 27px;
+                                    max-width: 27px;
+                                    max-height: 27px;
+                                }
+                                &:hover{
+                                    path{
+                                        stroke: $orange;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        
+                        
+                    }
+
+                    .left{
+                        min-width: 133px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+
+                        a{
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-transform: uppercase;
+                            color: #000000;
+                            font-family: $fontDop;
+                        }
+                    }
+                }
+
+                .formInput:focus+.formLabel, .formInput:not(:placeholder-shown)+.formLabel{
+                    bottom: 25px;
+                    font-size: 12px;
+                }
+
+                .formItem{
+                    max-width: 151px;
+                    width: 100%;
+                    position: relative;
+                    margin-top: 14px;
+                    margin-bottom: 32px;
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 100%;
+                    }
+
+                    .formInput{
+                        height: 26px;
+                        width: 100%;
+                        background: inherit;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        outline: none;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 130%;
+                        font-family: $fontDop;
+                        color: #898989;
+                        position: relative;
+                        padding: 0 5px;
+                        min-width: 151px;
+                        width: 100%;
+                        @media only screen and (max-width: $mobile) {
+                            min-width: auto;
+                            max-width: 100%;
+                        }
+                    }
+        
+                    .formLabel{
+                        position: absolute;
+                        pointer-events: none;
+                        left: 1.5px;
+                        right: 5px;
+                        bottom: 5px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 130%;
+                        font-family: $fontDop;
+                        transition: .2s;
+                        color: #CCCCCC;
+                        display: flex;
+                        align-items: center;
+                        gap: 6.5px;
+                    }
+                }
+            }
+
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                gap: 78px;
+                position: relative;
+                @media only screen and (max-width: $mobile) {
+                    gap: 0px;
+                    margin-top: 30px;
+                }
+                &::after{
+                    @media only screen and (max-width: $mobile) {
+                        content: '';
+                        background: #CCCCCC;
+                        width: 1px;
+                        height: 222px;
+                        position: absolute;
+                        left: 50%;
+                        right: 50%;
+                        top: 0;
+                    }
+                }
+
+                .imid{
+                    min-width: 169px;
+                }
+
+                .imid, .production{
+                    max-width: 169px;
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 150px;
+                        min-width: 150px;
+                    }
+
+                    h5{
+                        margin: 0;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 140%;
+                        text-transform: uppercase;
+                        color: #898989;
+                        font-family: $fontDop;
+                        margin-bottom: 20px;
+                        @media only screen and (max-width: $mobile) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    nav{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        @media only screen and (max-width: $mobile) {
+                            gap: 15px;
+                        }
+                        a{
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-transform: uppercase;
+                            color: #000000;
+                            font-family: $fontDop;
+                            transition: 0.2s;
+                            &:hover{
+                                color: $orange;
+                            }
+                            @media only screen and (max-width: $mobile) {
+                                font-size: 12px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscription{
+            max-width: 395px;
+            width: 100%;
+            margin-top: 64px;
+            margin-right: 94px;
+            @media only screen and (max-width: $mobile) {
+                margin-top: 50px;
+                margin-right: 0;
+                max-width: 100%;           
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-transform: uppercase;
+                font-family: $fontDop;
+                color: black;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 12px;
+                    font-weight: 700;          
+                }
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+
+                .formInput:focus+.formLabel, .formInput:not(:placeholder-shown)+.formLabel{
+                    bottom: 25px;
+                    font-size: 12px;
+                }
+
+                .formItem{
+                    max-width: 220px;
+                    width: 100%;
+                    position: relative;
+                    margin-top: 26px;
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 100%;
+                        margin-top: 11px;
+                    }
+                    
+
+                    .formInput{
+                        height: 26px;
+                        width: 100%;
+                        background: inherit;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        outline: none;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 130%;
+                        font-family: $fontDop;
+                        color: #898989;
+                        position: relative;
+                        padding: 0 5px;
+                    }
+        
+                    .formLabel{
+                        position: absolute;
+                        pointer-events: none;
+                        left: 5px;
+                        right: 5px;
+                        bottom: 5px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 130%;
+                        font-family: $fontDop;
+                        transition: .2s;
+                        color: #CCCCCC;
+                    }
+                }
+
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 151px;
+                    height: 45px;
+                    width: 100%;
+                    background: $swamp;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    margin-top: 30px;
+                    transition: 0.2s;
+                    font-family: $fontDop;
+                    &:hover{
+                        background: $orange;
+                        color: white;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 100%;
+                    }
+                }
+
+                .agreement{
+                    max-width: 165px;
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 130%;
+                    color: #898989;
+                    font-family: $fontDop;
+                    padding-left: 26px;
+                    margin-top: 10px;
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 100%;      
+                    }
+        
+                    a{
+                        color: #898989;
+                        text-decoration: underline;
+                    }
+        
+                    input[type="checkbox"]{
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+                    }
+        
+                    input[type="checkbox"]:checked + label, 
+                    input[type="checkbox"]:not(:checked) + label{
+                        position: relative;
+                        cursor: pointer;
+                    }
+        
+                    input[type="checkbox"]:checked + label:before, 
+                    input[type="checkbox"]:not(:checked) + label:before {
+                        content: "";
+                        position: absolute;
+                        left: -26px;
+                        top: 0px;
+                        width: 16px;
+                        height: 16px;
+                        background-color: $orange;
+                    }
+        
+                    input[type="checkbox"]:checked + label:after, 
+                    input[type="checkbox"]:not(:checked) + label:after{
+                        content: "";
+                        position: absolute;
+                        -webkit-transition: all 0.2s ease;
+                        -moz-transition: all 0.2s ease;
+                        -o-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                    }
+        
+                    input[type="checkbox"]:checked + label:after, 
+                    input[type="checkbox"]:not(:checked) + label:after {
+                        left: -23.5px;
+                        top: 2px;
+                        width: 12px;
+                        height: 12px;
+                        background-repeat: no-repeat;
+                        background-image: url("../../../images/mainPage/Vector\ 4.svg");
+                    }
+        
+                    input[type="radio"]:checked + label:after{
+                        left: 6px;
+                        top: 6px;
+                        width: 11px;
+                        height: 11px;
+                        border-radius: 100%;
+                        background-color: #e145a3;
+                    }
+        
+                    input[type="checkbox"]:not(:checked) + label:after {
+                        opacity: 0;
+                    }
+        
+                    input[type="checkbox"]:checked + label:after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

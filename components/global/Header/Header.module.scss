@@ -1,0 +1,300 @@
+@import '../../../css/common.scss';
+
+.header{
+    font-family: $fontDop;
+    padding: 30px 0;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    overflow: hidden;
+    @media only screen and (max-width: $mobile) {
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: fixed;
+        height: 78px;
+    }
+    &:hover{
+        background: $swamp;
+    }
+
+    .logoRight{
+        position: absolute;
+        right: 30px;
+        top: 51px;
+        @media only screen and (max-width: $mobile) {
+            right: 20px;
+            top: 18px;
+            z-index: 999;
+        }
+        svg{
+            @media only screen and (max-width: $mobile) {
+                max-width: 128px;
+            }
+        }
+    }
+
+    .logo{
+        margin-bottom: 31px;
+        position: relative;
+        display: flex;
+        z-index: 2;
+        @media only screen and (max-width: $mobile) {
+            margin-bottom: 20px;
+        }
+
+        
+
+        svg{
+            z-index: 2;
+            position: relative;
+            @media only screen and (max-width: $mobile) {
+                max-width: 118px;
+                height: 19px;
+            }
+        }
+
+        .logoLine{
+            width: 100%;
+            background: $orange;
+            height: 3px;
+            position: absolute;
+            z-index: 0;
+            bottom: 15px;
+            right: -200px;
+            @media only screen and (max-width: $mobile) {
+                bottom: 8px;
+                right: -20px;
+            }
+        }
+
+    }
+    .headerBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-right: 67px;
+
+            @media only screen and (max-width: $mobile) {
+                display: none;
+            }
+
+            a{
+                font-family: $fontDop;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: white;
+                transition: 0.2s;
+                &:hover{
+                    color: $orange;
+                }
+            }
+        }
+
+        .headerBtns{
+            display: flex;
+            align-items: center;
+        }
+
+        .language{
+            z-index: 2;
+            a {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                margin-right: 40px;
+                color: white;
+                transition: 0.2s;
+                &:hover{
+                    color: $orange;
+                }
+            }
+        }
+
+        .tel{
+            z-index: 2;
+            margin-right: 20px;
+            transition: 0.2s;
+            height: 17px;
+            &:hover{
+                path{
+                    fill: $orange;
+                }
+            }
+            a{
+                line-height: 100%;
+            }
+        }
+        
+        .mail{
+            z-index: 2;
+            transition: 0.2s;
+            height: 17px;
+            &:hover{
+                path{
+                    fill: $orange;
+                }
+            }
+            a{
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+.headerBottom{
+
+    .mobileMenu{
+        display: none;
+        @media only screen and (max-width: $mobile) {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: $swamp;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 119px;
+            transition: 0.8s;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            gap: 20px;
+            margin-bottom: 50px;
+
+            a{
+                z-index: -1;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-family: $fontDop;
+            }
+        }
+
+        .contacts{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            margin-bottom: 21px;
+
+            div{
+                z-index: -1;
+                text-align: center;
+            }
+
+            a{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-family: $fontDop;
+                text-align: center;
+            }
+        }
+
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            a{
+                z-index: -1;
+            }
+
+            svg{
+                min-width: 27.4px;
+                min-height: 27.4px;
+            }
+        }
+    }
+
+    .mobileMenuBtn,
+    .mobileMenuBtn:before,
+    .mobileMenuBtn:after{
+        position: absolute;
+        left: 20px;
+        height: 2px;
+        width: 25px;
+        background: white;
+        -webkit-transition: all 0.25s;
+        transition: all 0.25s;
+    }
+    
+    .mobileMenuBtn{
+        z-index: 2;
+        width: 18px;
+        display: none;
+        @media only screen and (max-width: $mobile) {
+            display: block;
+        }
+    }
+
+    .mobileMenuBtn:before{
+        content: '';
+        top: -10px;
+        left: 0;
+    }
+
+    .mobileMenuBtn:after{
+        content: '';
+        top: 10px;
+        left: 0;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenuBtn{
+        height: 0;
+        background: inherit;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenuBtn:before{
+        transform: rotate(-45deg);
+        top: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenuBtn:after{
+        top: 0;
+        transform: rotate(45deg);
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenu{
+        display: flex;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenu nav a{
+        z-index: 1;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenu .social a{
+        z-index: 1;
+    }
+
+    .mobileMenuCheck:checked ~ .mobileMenu .contacts div{
+        z-index: 1;
+    }
+}

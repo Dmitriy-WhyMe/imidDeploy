@@ -1,0 +1,96 @@
+@import "../../../../../css/common";
+
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70px;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    @media only screen and (max-width: $mobile) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: inherit;
+        padding-left: 0;
+    }
+
+    label{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: white;
+        font-family: $fontDop;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 130%;
+            min-height: inherit;
+        }
+        &::after{
+            margin: auto;
+            content: '';
+            position: absolute;
+            right: 12px;
+            display: flex;
+			align-items: center;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            top: 0;
+            bottom: 0;
+            transition: 0.2s;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath fill='%23fff' d='M25 5.147V24.2647C25 24.4597 24.9225 24.6467 24.7846 24.7846C24.6467 24.9225 24.4597 25 24.2647 25H5.147C4.95198 25 4.76496 24.9225 4.62706 24.7846C4.48917 24.6467 4.4117 24.4597 4.4117 24.2647C4.4117 24.0697 4.48917 23.8827 4.62706 23.7448C4.76496 23.6069 4.95198 23.5294 5.147 23.5294H22.4897L0.21534 1.25509C0.0774603 1.11721 -3.84376e-09 0.93021 0 0.735218C3.84376e-09 0.540226 0.0774602 0.35322 0.21534 0.21534C0.35322 0.0774602 0.540226 3.84375e-09 0.735218 0C0.93021 -3.84376e-09 1.11721 0.0774603 1.25509 0.21534L23.5294 22.4897V5.147C23.5294 4.95198 23.6069 4.76496 23.7448 4.62706C23.8827 4.48917 24.0697 4.4117 24.2647 4.4117C24.4597 4.4117 24.6467 4.48917 24.7846 4.62706C24.9225 4.76496 25 4.95198 25 5.147Z'/%3e%3c/svg%3e");
+            @media only screen and (max-width: $mobile) {
+                bottom: inherit;
+                right: 0;
+            }
+        }
+        p{
+            @media only screen and (max-width: $mobile) {
+                max-width: 250px;
+            }
+        }
+    }
+
+    .content{
+        position: relative;
+        z-index: 2;
+        transition: 0.2s;
+        opacity: 0;
+        display: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: white;
+        font-family: $fontDop;
+        padding-bottom: 23px;
+        margin-top: -15px;
+        @media only screen and (max-width: $mobile) {
+            margin-top: 5px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.item input:checked ~ .content{
+    display: flex;
+    opacity: 1;
+}
+
+.item input:not(:checked) + .content{
+    display: none;
+}
+	
+.item input:checked ~ label{
+    &::after{
+        transition: 0.2s;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath fill='%23fff' d='M25 20.7002V1.58246C25 1.38745 24.9225 1.20043 24.7846 1.06254C24.6467 0.924649 24.4597 0.847178 24.2647 0.847168H5.147C4.95198 0.847168 4.76496 0.924636 4.62706 1.06253C4.48917 1.20043 4.4117 1.38745 4.4117 1.58246C4.4117 1.77748 4.48917 1.9645 4.62706 2.1024C4.76496 2.24029 4.95198 2.31776 5.147 2.31776H22.4897L0.21534 24.5921C0.0774602 24.73 -3.84376e-09 24.917 0 25.112C3.84376e-09 25.3069 0.0774602 25.4939 0.21534 25.6318C0.35322 25.7697 0.540226 25.8472 0.735218 25.8472C0.93021 25.8472 1.11721 25.7697 1.25509 25.6318L23.5294 3.35752V20.7002C23.5294 20.8952 23.6069 21.0822 23.7448 21.2201C23.8827 21.358 24.0697 21.4355 24.2647 21.4355C24.4597 21.4355 24.6467 21.358 24.7846 21.2201C24.9225 21.0822 25 20.8952 25 20.7002Z'/%3e%3c/svg%3e");
+    }
+}
+	

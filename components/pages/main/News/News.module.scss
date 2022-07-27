@@ -1,0 +1,73 @@
+@import "../../../../css/common";
+
+.news{
+    padding-top: 150px;
+    padding-left: 100px;
+    @media only screen and (max-width: $mobile) {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .wrap{
+        background: white;
+        padding-left: 100px;
+        padding-top: 100px;
+        padding-right: 200px;
+        padding-bottom: 586px;
+        position: relative;
+        @media only screen and (max-width: $mobile) {
+            padding: 0 20px;
+            padding-bottom: 556px;
+            padding-top: 80px;
+        }
+
+        .flex{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            @media only screen and (max-width: $mobile) {
+                margin-bottom: 20px;
+            }
+
+            h2{
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 71px;
+                text-transform: uppercase;
+                color: black;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 28px;
+                    line-height: 41px;
+                    padding-left: 10px;
+                }
+            }
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 202px;
+                width: 100%;
+                height: 45px;
+                background: $swamp;
+                font-family: $fontDop;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 140%;
+                text-transform: uppercase;
+                transition: 0.2s;
+                &:hover{
+                    background: $orange;
+                    color: white;
+                }
+                @media only screen and (max-width: $mobile) {
+                    position: absolute;
+                    bottom: 40px;
+                    max-width: calc(100% - 40px);
+                }
+            }
+            
+        }
+    }
+}

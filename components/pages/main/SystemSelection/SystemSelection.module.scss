@@ -1,0 +1,71 @@
+@import '../../../../css/common.scss';
+
+.systemSelection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(272.76deg, rgba(0, 0, 0, 0.3) 4.61%, rgba(0, 0, 0, 0) 95.39%), #F5F5F5;
+    height: 99px;
+    transition: 0.2s;
+    @media only screen and (max-width: $mobile) {
+        height: 130px;
+        padding: 0 20px;
+        position: relative;
+        justify-content: space-between;
+    }
+    &:hover{
+        .text{
+            span{
+                color: $orange;
+            }
+        }
+        svg{
+            path{
+                fill: $orange
+            }
+        }
+    }
+
+    .img{
+        @media only screen and (max-width: $mobile) {
+            max-width: 96px;
+            width: 100%;
+        }
+    }
+
+    .text{
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: $orange;
+        display: flex;
+        gap: 10.64px;
+        @media only screen and (max-width: $mobile) {
+            font-size: 20px;
+            line-height: 30px;
+            flex-direction: column;
+            gap: 0;
+            max-width: 190px;
+        }
+
+        span{
+            transition: 0.2s;
+            color: black;
+        }
+    }
+    
+    svg{
+        transition: 0.2s;
+        margin-right: 70px;
+        @media only screen and (max-width: $mobile) {
+            margin-right: 0;
+            position: absolute;
+            bottom: 26px;
+            left: 106px;
+            max-width: 17px;
+            max-height: 17px;
+        }
+    }
+}

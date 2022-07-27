@@ -1,0 +1,82 @@
+@import "../../../../../css/common";
+.aboutText{
+    max-width: 515px;
+    width: 100%;
+    margin-top: 22px;
+    @media only screen and (max-width: $mobile) {
+        margin-top: 0;
+    }
+
+    .text{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 66.5px;
+        @media only screen and (max-width: $mobile) {
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-family: $fontDop;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            @media only screen and (max-width: $mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .btns{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @media only screen and (max-width: $mobile) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn{
+            background: white;
+            max-width: 153px;
+            width: 100%;
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $swamp;
+            font-family: $fontDop;
+            transition: 0.2s;
+            @media only screen and (max-width: $mobile) {
+                max-width: 100%;
+            }
+            &:hover{
+                background: $orange;
+                color: white;
+            }
+        }
+        
+        .link{
+            font-family: $fontDop;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: white;
+            transition: 0.2s;
+            @media only screen and (max-width: $mobile) {
+                font-size: 10px;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

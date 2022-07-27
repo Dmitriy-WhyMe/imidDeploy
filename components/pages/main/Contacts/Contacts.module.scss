@@ -1,0 +1,10 @@
+@import "../../../../css/common";
+
+.contacts{
+    margin-top: 220px;
+    margin-bottom: 200px;
+    @media only screen and (max-width: $mobile) {
+        margin-top: 90px;
+        margin-bottom: 351px;
+    }
+}

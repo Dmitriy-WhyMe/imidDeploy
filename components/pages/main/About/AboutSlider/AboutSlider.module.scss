@@ -1,0 +1,49 @@
+@import '../../../../../css/common.scss';
+
+.slider{
+    position: absolute;
+    right: 0;
+    max-width: 787px;
+    width: 100%;
+    @media only screen and (max-width: $mobile) {
+        bottom: 70px;
+    }
+}
+
+.btns{
+    position: absolute;
+    bottom: 5px;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    @media only screen and (max-width: $mobile) {
+        right: 20px;
+        gap: 10px;
+        bottom: 0;
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: inherit;
+        border: 1px solid #FFFFFF;
+        width: 56px;
+        height: 56px;
+        transition: 0.2s;
+        @media only screen and (max-width: $mobile) {
+            width: 45px;
+            height: 45px;
+        }
+        &:hover{
+            background: white;
+            svg{
+                path{
+                    fill: #0E302A;
+                }
+            }
+        }
+    }
+    
+}

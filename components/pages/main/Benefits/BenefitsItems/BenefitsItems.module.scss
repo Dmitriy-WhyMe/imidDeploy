@@ -1,0 +1,45 @@
+@import "../../../../../css/common";
+
+.wrap{
+    margin-top: 50px;
+    background: #F5F5F5;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    @media only screen and (max-width: $mobile) {
+        margin-top: 30px;
+        background: white;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        background: #F5F5F5;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        @media only screen and (max-width: $mobile) {
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            right: 50%;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        background: $swamp;
+        @media only screen and (max-width: $mobile) {
+            z-index: -10;
+        }
+    }
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}

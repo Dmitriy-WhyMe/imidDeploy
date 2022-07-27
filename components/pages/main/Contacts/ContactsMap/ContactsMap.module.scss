@@ -1,0 +1,9 @@
+@import "../../../../../css/common";
+
+.map{
+    @media only screen and (max-width: $mobile) {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+    }
+}

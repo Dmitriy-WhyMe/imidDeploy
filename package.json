@@ -1,0 +1,33 @@
+{
+  "name": "imid",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4233",
+    "build": "next build",
+    "start": "next start -p 4233",
+    "lint": "next lint",
+    "pm2": "pm2"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-collapsible": "^2.10.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.33.1",
+    "react-input-mask": "^2.0.4",
+    "react-range": "^1.8.13",
+    "react-slider-swiper": "^2.0.6",
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.52.3",
+    "swiper": "^8.2.4",
+    "use-font-face-observer": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6"
+  }
+}

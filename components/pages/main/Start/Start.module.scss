@@ -1,0 +1,53 @@
+@import '../../../../css/common.scss';
+
+.start{
+    position: relative;
+
+    .bg{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        @media only screen and (max-width: $mobile) {
+            min-height: 540px;
+        }
+    }
+
+    .text{
+        z-index: 9999;
+        bottom: 100px;
+        position: absolute;
+        max-width: 785px;
+        width: 100%;
+        min-height: 231px;
+        @media only screen and (max-width: $mobile) {
+            min-height: 123px;
+            bottom: 52px;
+        }
+
+        .flagImg{
+            position: absolute;
+            left: 349px;
+            top: 16px;
+            @media only screen and (max-width: $mobile) {
+                left: 202px;
+                top: 4px;
+                max-width: 41px;
+            }
+        }
+        
+        h1{
+            font-family: $fontMain;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: white;
+            @media only screen and (max-width: $mobile) {
+                font-size: 34px;
+                line-height: 120%;
+            }
+        }
+        
+    }
+}
