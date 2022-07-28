@@ -44,7 +44,10 @@
 
 .slider{
     position: absolute;
-    max-width: 100%;
+    max-width: 96.2%;
+    @media only screen and (max-width: $mobile) {
+        max-width: 100%;
+    }
 
     .links{
         transition: 0.2s;
@@ -57,7 +60,7 @@
             }
         }
     }
-    
+
     .slide{
         background: $swamp;
         min-width: 465px;

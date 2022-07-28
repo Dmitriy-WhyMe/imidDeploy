@@ -16,7 +16,7 @@ const NewsSlider = () => {
 		navigation: false,
 		speed: 200,
 		slidesPerView: 'auto',
-        spaceBetween: -25,
+        spaceBetween: 25,
 		autoplay: {
 			delay: 5000
 		},
@@ -38,7 +38,7 @@ const NewsSlider = () => {
                     onSwiper={(swiper) => setSlider(swiper)}
                 >
 
-					<SwiperSlide>
+					<SwiperSlide className={styles.screen}>
 						<Link href="#">
 							<a className={styles.links}>
 								<div className={styles.slide}>
@@ -59,7 +59,7 @@ const NewsSlider = () => {
 						</Link>
                     </SwiperSlide>
 
-					<SwiperSlide>
+					<SwiperSlide className={styles.screen}>
 						<Link href="#">
 							<a className={styles.links}>
 								<div className={styles.slide}>
@@ -80,7 +80,7 @@ const NewsSlider = () => {
 						</Link>
                     </SwiperSlide>
 					
-					<SwiperSlide>
+					<SwiperSlide className={styles.screen}>
 						<Link href="#">
 							<a className={styles.links}>
 								<div className={styles.slide}>

@@ -41,34 +41,7 @@ const Gallery = () => {
             <Container>
                 <div className={styles.flex}>
                     <TitleLine title={"галерея"}/>
-
-                    <div className={styles.block}>
-
-                        <div className={styles.pagination}>
-                            <div className={styles.paginationActve}>01</div>
-                            <div className={styles.paginationAll}>/03</div>
-                        </div>
-
-                        <div className={styles.btns}>
-
-                            <button
-                                className={styles.ArrowLeft}
-                                onClick={() => (slider ? slider.slidePrev() : null)}
-                            >
-                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999512 8L0.645958 7.64645L0.292405 8L0.645958 8.35355L0.999512 8ZM1.35307 8.35355L8.35307 1.35355L7.64596 0.646447L0.645958 7.64645L1.35307 8.35355ZM8.35307 14.6464L1.35307 7.64645L0.645958 8.35355L7.64596 15.3536L8.35307 14.6464Z" fill="white"/></svg>
-                            </button>
-
-                            <button
-                                className={styles.ArrowRight}
-                                onClick={() => (slider ? slider.slideNext() : null)}
-                            >
-                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99951 8L8.35307 7.64645L8.70662 8L8.35307 8.35355L7.99951 8ZM7.64596 8.35355L0.645958 1.35355L1.35307 0.646447L8.35307 7.64645L7.64596 8.35355ZM0.645958 14.6464L7.64596 7.64645L8.35307 8.35355L1.35307 15.3536L0.645958 14.6464Z" fill="white"/></svg>
-                            </button>
-
-                        </div>
-
-                    </div>
-
+                    <Link href="#"><button className={styles.btn}>смотреть все</button></Link>
                 </div>
             </Container>
             
@@ -118,7 +91,31 @@ const Gallery = () => {
                         </button>
                     </div>
 
-                    <Link href="#"><button className={styles.btn}>смотреть все</button></Link>
+                    <div className={styles.block}>
+
+                        <div className={styles.pagination}>
+                            <div className={styles.paginationActve}>01</div>
+                            <div className={styles.paginationAll}>/03</div>
+                        </div>
+
+                        <div className={styles.btns}>
+
+                            <button
+                                className={styles.ArrowLeft}
+                                onClick={() => (slider ? slider.slidePrev() : null)}
+                            >
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999512 8L0.645958 7.64645L0.292405 8L0.645958 8.35355L0.999512 8ZM1.35307 8.35355L8.35307 1.35355L7.64596 0.646447L0.645958 7.64645L1.35307 8.35355ZM8.35307 14.6464L1.35307 7.64645L0.645958 8.35355L7.64596 15.3536L8.35307 14.6464Z" fill="white"/></svg>
+                            </button>
+
+                            <button
+                                className={styles.ArrowRight}
+                                onClick={() => (slider ? slider.slideNext() : null)}
+                            >
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99951 8L8.35307 7.64645L8.70662 8L8.35307 8.35355L7.99951 8ZM7.64596 8.35355L0.645958 1.35355L1.35307 0.646447L8.35307 7.64645L7.64596 8.35355ZM0.645958 14.6464L7.64596 7.64645L8.35307 8.35355L1.35307 15.3536L0.645958 14.6464Z" fill="white"/></svg>
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
             </Container>
             
