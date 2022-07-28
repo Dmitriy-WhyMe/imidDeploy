@@ -58,15 +58,16 @@
         }
 
         .logoLine{
-            width: 100%;
+            width: calc(100% + 360px);
             background: $orange;
             height: 3px;
             position: absolute;
             z-index: 0;
             bottom: 15px;
-            right: -200px;
+            right: -360px;
             @media only screen and (max-width: $mobile) {
                 bottom: 8px;
+                width: 100%;
                 right: -20px;
             }
         }

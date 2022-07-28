@@ -68,7 +68,6 @@
             font-size: 14px;
             line-height: 140%;
             text-transform: uppercase;
-            text-decoration: underline;
             color: white;
             transition: 0.2s;
             @media only screen and (max-width: $mobile) {
@@ -76,7 +75,6 @@
             }
             &:hover{
                 color: $orange;
-                text-decoration: none;
             }
         }
     }
