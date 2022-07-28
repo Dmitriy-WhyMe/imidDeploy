@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 70px;
     border-bottom: 1px solid white;
     padding-left: 10px;
     @media only screen and (max-width: $mobile) {
@@ -63,7 +62,8 @@
         z-index: 2;
         transition: 0.2s;
         opacity: 0;
-        display: none;
+        max-height: 70px;
+        height: 100%;
         font-weight: 400;
         font-size: 18px;
         line-height: 140%;
@@ -71,6 +71,7 @@
         font-family: $fontDop;
         padding-bottom: 23px;
         margin-top: -15px;
+        display: none;
         @media only screen and (max-width: $mobile) {
             margin-top: 5px;
             padding-bottom: 0;
@@ -79,12 +80,14 @@
 }
 
 .item input:checked ~ .content{
+    max-height: 100%;
     display: flex;
     opacity: 1;
 }
 
 .item input:not(:checked) + .content{
     display: none;
+    opacity: 0;
 }
 	
 .item input:checked ~ label{
