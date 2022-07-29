@@ -7,7 +7,10 @@ const Benefits = () => {
 	return (
 		<div className={styles.benefits}>
 			<Container>
-				<TitleLine title={"конкурентные преимущества"} widthStatick={603}/>
+				<div className={styles.title}>
+					<div className={styles.line} />
+					<h2>конкурентные преимущества</h2>
+				</div>
 			</Container>
 			<BenefitsItems />
 			<Container>
