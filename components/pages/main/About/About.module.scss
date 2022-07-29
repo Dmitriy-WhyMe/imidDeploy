@@ -15,7 +15,6 @@
     padding-bottom: 450px;
   }
 
-
   .aboutFirst{
     display: flex;
     gap: 97px;
@@ -25,8 +24,8 @@
       gap: 30px;
     }
   }
-  
 }
+
 .aboutCarts{
   padding-right: 100px;
   margin-left: 100px;
@@ -42,17 +41,17 @@
 }
 
 @media only screen and (min-width: $desktopWide) {
-  
+
 }
 
 @media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
-  
+
 }
 
 @media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
-  
+
 }
 
 @media only screen and (max-width: $mobile) {
-  
+
 }

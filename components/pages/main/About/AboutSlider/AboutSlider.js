@@ -30,10 +30,10 @@ const AboutSlider = () => {
                     onSwiper={(swiper) => setSlider(swiper)}
                 >
                     <SwiperSlide>
-                        <Image alt="" src={img} width={787} height={751}/>
+                        <Image alt="" src={img} width={787} height={751} quality={95}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image alt="" src={img}/>
+                        <Image alt="" src={img} quality={95}/>
                     </SwiperSlide>
                 </Swiper>
 

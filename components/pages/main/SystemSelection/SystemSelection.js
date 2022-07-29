@@ -7,15 +7,14 @@ import img from '../../../../images/mainPage/гкс.png'
 const SystemSelection = () => {
 	return (
 		<Link href="#">
-
 			<a className={styles.systemSelection}>
 				<div className={styles.text}>Выбрать <span>Горячеканальную систему</span></div>
 				<Arrow />
+
 				<div className={styles.img}>
-					<Image alt="" src={img}/>
+					<Image alt="" src={img} quality={95}/>
 				</div>
 			</a>
-			
 		</Link>
 	)
 }

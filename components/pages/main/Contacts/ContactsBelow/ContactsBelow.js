@@ -6,12 +6,10 @@ import styles from './ContactsBelow.module.scss'
 const ContactsBelow = () => {
     return (
         <div className={styles.contactsBelow}>
-
             <div className={styles.flex}>
                 <ContactsForm />
                 <ContactsMap />
             </div>
-                
         </div>
     )
 }

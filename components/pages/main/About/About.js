@@ -8,17 +8,14 @@ export default function About() {
     return (
         <>
             <section className={styles.about}>
-
                 <Container>
-
                     <div className={styles.aboutFirst}>
                         <AboutText />
                         <AboutSlider />
                     </div>
-                    
                 </Container>
-
             </section>
+
             <section className={styles.aboutCarts}>
                 <AboutCarts />
             </section>

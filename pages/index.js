@@ -1,10 +1,5 @@
 import Layout from "../components/global/Layout/Layout"
 import { useState } from 'react'
-/*
-import { 
-    Start, SystemSelection, About, Benefits, Products, Questions, Support, News, Gallery, Contacts
-} from './IndexImport'
-*/
 import Start from '../components/pages/main/Start/Start'
 import SystemSelection from '../components/pages/main/SystemSelection/SystemSelection'
 import About from '../components/pages/main/About/About'

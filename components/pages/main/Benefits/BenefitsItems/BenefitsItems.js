@@ -13,9 +13,7 @@ const BenefitsItems = () => {
     <div className={styles.wrap}>
 
         <Container>
-
             <div className={styles.items}>
-
                 <BenefitsItem
                     ico={<OneIco />}
                     text="Лидер российского рынка Горячеканальных систем"
@@ -66,9 +64,7 @@ const BenefitsItems = () => {
                     text="Стандартные и индивидуальные проекты по ТЗ заказчика"
                     number={<TenNumber />}
                 />
-
             </div>
-
         </Container>
         
     </div>

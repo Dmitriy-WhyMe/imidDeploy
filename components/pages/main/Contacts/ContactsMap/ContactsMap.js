@@ -5,7 +5,7 @@ import styles from './ContactsMap.module.scss'
 const ContactsMap = () => {
     return (
         <div className={styles.map}>
-            <Image alt="" src={img}/>
+            <Image alt="" src={img} quality={95}/>
         </div>
     )
 }

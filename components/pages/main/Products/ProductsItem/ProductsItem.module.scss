@@ -19,6 +19,9 @@
         line-height: 130%;
         padding: 0;
     }
+    &[data-opacity="Y"] {
+        opacity: .5;
+    }
     &:hover{
         padding: 0 30px;    
     }

@@ -6,12 +6,10 @@ const Support = () => {
   return (
     <div className={styles.support}>
         <Container>
-
             <div className={styles.flex}>
                 <h2>Поддержка и сервис</h2>
                 <Link href="#"><button>подробнее</button></Link>
             </div>
-            
         </Container>
     </div>
   )

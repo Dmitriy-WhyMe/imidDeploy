@@ -7,22 +7,18 @@ import styles from './Start.module.scss'
 const Start = () => {
 	return (
 		<section className={styles.start}>
-
 			<div className={styles.bg}>
-				<Image alt="" src={bgImg} />
+				<Image alt="" src={bgImg} quality={95}/>
 			</div>
 
 			<Container>
-
 				<div className={styles.text}>
-					
 					<div className={styles.title}>
-						<span>Российское<div className={styles.flagImg}><Image alt="" src={flag} width={69} height={53} /></div></span>
+						<span>Российское<div className={styles.flagImg}><Image alt="" src={flag} width={69} height={53} quality={95}/></div></span>
 						<span>высокотехнологичное</span>
 						<span>производство</span>
 					</div>
 				</div>
-
 			</Container>
 		</section>
 	)

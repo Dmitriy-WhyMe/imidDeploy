@@ -15,7 +15,6 @@ const ContactsForm = () => {
 			<h4>Оставьте свои контакты и мы Вам перезвоним!</h4>
 
 			<form onSubmit={handleSubmit(onSubmit)}>
-				
 				<div className={styles.formItem}>
 					<input 
 						className={styles.formInput}

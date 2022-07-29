@@ -8,11 +8,9 @@ const Contacts = () => {
   return (
     <section className={styles.contacts}>
         <Container>
-
             <TitleLine title={"Контакты"} widthStatick={198}/>
             <ContactsInfo />
             <ContactsBelow />
-
         </Container>
     </section>
   )

@@ -2,7 +2,7 @@ import classes from './Layout.module.scss'
 import Head from 'next/head'
 import {useContext} from "react"
 import { PopupContext } from "../../../context/popup/popupContext"
-import Header from '../../global/Header/Header'
+import Header from '../HeaderWrapper/Header'
 import Footer from '../Footer/Footer'
 
 const Layout = ({title, keywords, description, children}) => {
