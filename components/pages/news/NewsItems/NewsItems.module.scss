@@ -1,0 +1,204 @@
+@import "../../../../css/common";
+
+.btnMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: $fontDop;
+    max-width: 225px;
+    width: 100%;
+    height: 45px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 70px;
+    &:hover{
+        background: #E30613;
+        color: white;
+    }
+    @media only screen and (max-width: $mobile) {
+        margin-top: 50px;
+    }
+}
+
+.flex{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    .links{
+        transition: 0.2s;
+        &:hover{
+            .slide > .period > .btn{
+                color: $orange;
+                &::after{
+                    background: $orange;
+                }
+            }
+        }
+    }
+
+    .links{
+        background: white;
+        max-width: 588px;
+        width: 100%;
+        min-height: 390px;
+        padding: 30px;
+        position: relative;
+        @media only screen and (max-width: $mobile) {
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .date{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            text-transform: uppercase;
+            font-family: $fontDop;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $orange;
+            color: #CCCCCC;
+            margin-bottom: 20px;
+            @media only screen and (max-width: $mobile) {
+                font-size: 10px;
+                margin-bottom: 10px;
+                border-bottom: 2px solid $orange;
+            }
+        }
+
+        h4{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-family: $fontDop;
+            margin-bottom: 20px;
+            max-width: 405px;
+            width: 100%;
+            color: black;
+            @media only screen and (max-width: $mobile) {
+                font-size: 16px;
+                line-height: 130%;
+            }
+
+            ul{
+                margin: 0;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .text p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            width: 100%;
+            font-family: $fontDop;
+            color: black;
+            @media only screen and (max-width: $mobile) {
+                font-size: 16px;
+                line-height: 130%;
+            }
+        }
+
+        .location{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            position: absolute;
+            bottom: 94px;
+            left: 30px;
+            right: 30px;
+            @media only screen and (max-width: $mobile) {
+                left: 10px;
+                right: 10px;
+                bottom: 73px;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-transform: uppercase;
+                color: #CCCCCC;
+                font-family: $fontDop;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .period{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            height: 44px;
+            @media only screen and (max-width: $mobile) {
+                left: 10px;
+                right: 20px;
+                bottom: 23px;
+            }
+
+            p{
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                text-transform: uppercase;
+                color: black;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .btn{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-transform: uppercase;
+                color: black;
+                transition: 0.2s;
+                position: absolute;
+                right: 0px;
+                font-family: $fontDop;
+                &::after{
+                    position: absolute;
+                    width: 100%;
+                    content: '';
+                    height: 1px;
+                    background: black;
+                    left: 0;
+                    bottom: -2px;
+                    transition: 0.2s;
+                }
+                &:hover{
+                    color: $orange;
+                    &::after{
+                        background: $orange;
+                    }
+                }
+                @media only screen and (max-width: $mobile) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

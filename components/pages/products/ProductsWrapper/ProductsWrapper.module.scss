@@ -1,0 +1,164 @@
+@import '../../../../css/common.scss';
+
+.wrapper{
+    position: relative;
+    @media only screen and (max-width: $mobile) {
+        padding-bottom: 230px;
+        margin-top: 66px;
+    }
+}
+
+.row{
+    position: absolute;
+    bottom: 450px;
+    @media only screen and (max-width: $mobile) {
+        bottom: 185px;
+    }
+    .tabs{
+        display: flex;
+        align-items: center;
+
+        button{
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 158px;
+            max-width: 158px;
+            width: 100%;
+            height: 45px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 140%;
+            text-transform: uppercase;
+            font-family: $fontDop;
+            @media only screen and (max-width: $mobile) {
+                min-width: 88px;
+            }
+        }
+
+        .default{
+            background: inherit;
+            color: white;
+            border: 1px solid white;
+            &:hover{
+                background: white;
+                color: black;
+            }
+        }
+
+        .activeTab{
+            background: white;
+            color: black;
+            border: 1px solid white;
+            &:hover{
+                background: inherit;
+                color: white;
+            }
+        }
+    }
+}
+
+.navigate{
+    display: flex;
+    margin-top: 150px;
+    @media only screen and (max-width: $mobile) {
+        margin-top: 70px;
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+    }
+
+    .item{
+        max-width: 600px;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        @media only screen and (max-width: $mobile) {
+            height: 115px;
+            width: 50vw;
+        }
+
+        .img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media only screen and (max-width: $mobile) {
+                height: 115px;
+            }
+            span{
+                @media only screen and (max-width: $mobile) {
+                    height: 115px !important;
+                }
+                img{
+                    @media only screen and (max-width: $mobile) {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .text{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            left: 70px;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            @media only screen and (max-width: $mobile) {
+                left: 20px;
+            }
+
+            p{
+                font-family: $fontDop;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 140%;
+                color: white;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 10px;
+                }
+            }
+
+            a{
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                text-transform: uppercase;
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 12px;
+                    line-height: 140%;
+                    gap: 5px;
+                    align-items: flex-start;
+                }
+
+                p{
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 128px;
+                        min-width: 128px;
+                        width: 100%;
+                    }
+                }
+
+                svg{
+                    @media only screen and (max-width: $mobile) {
+                        max-width: 17px;
+                        height: 17px;
+                    }
+                }
+                
+                svg path{
+                    fill: white;
+                }
+            }
+        }
+    }
+}

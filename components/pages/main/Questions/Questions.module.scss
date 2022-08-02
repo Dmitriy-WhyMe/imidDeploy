@@ -9,66 +9,6 @@
         position: relative;
     }
 
-    .accordion{
-        border-top: 1px solid white;
-        display: flex;
-        flex-direction: column;
-
-        .item{
-            border-bottom: 1px solid white;
-            position: relative;
-        }
-
-        .titleItem{
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            text-transform: uppercase;
-            font-family: $fontDop;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            @media only screen and (max-width: $mobile) {
-                font-size: 16px;
-                line-height: 130%;
-                max-width: 250px;
-                height: auto;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-        }
-        
-        .subContainerText{
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 140%;
-            font-family: $fontDop;
-            padding-bottom: 23px;
-            max-width: 700px;
-            @media only screen and (max-width: $mobile) {
-               font-size: 16px;
-            }
-        }
-
-        .arrow{
-            position: absolute;
-            right: 12px;
-            top: 23px;
-            background-image: url("../../../../images/mainPage/arrows.svg");
-            width: 25px;
-            height: 25px;
-            transition: all 0.2s ease;
-            &[data-active="Y"] {
-                transition: all 0.2s ease;
-                transform: rotate(-90deg);
-            }
-            @media only screen and (max-width: $mobile) {
-                top: 20px;
-            }
-        }
-    }
-
     .flex{
         display: flex;
         align-items: center;

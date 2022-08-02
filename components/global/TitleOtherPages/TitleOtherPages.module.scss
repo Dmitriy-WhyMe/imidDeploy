@@ -1,0 +1,57 @@
+@import "../../../css/common";
+
+.block{
+    position: relative;
+    margin-top: 144px;
+    max-height: 220px;
+    margin-bottom: 50px;
+    height: 100%;
+
+    .imgDesk{
+        height: 100%;
+        max-height: 220px;
+    }
+
+    .imgMobile{
+        display: none;
+    }
+    
+    h1{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .block {
+        margin-top: 99px;
+        height: 150px;
+        margin-bottom: 30px;
+
+        .imgDesk{
+            display: none;
+        }
+    
+        .imgMobile{
+            display: block;
+            height: 100%;
+            max-height: 150px;
+            span span{
+                max-height: 150px;
+            }
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 29px;
+            line-height: 120%;
+        }
+    }
+}

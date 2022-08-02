@@ -72,8 +72,8 @@ const HeaderDefault = () => {
                     <Link href="#"><a>Продукция</a></Link>
                     <Link href="#"><a>Новости и статьи</a></Link>
                     <Link href="#"><a>Галерея</a></Link>
-                    <Link href="#"><a>Вопросы и ответы</a></Link>
-                    <Link href="#"><a>Контакты</a></Link>
+                    <Link href="/faq"><a>Вопросы и ответы</a></Link>
+                    <Link href="/contacts"><a>Контакты</a></Link>
                 </nav>
 
                 <div className={styles.headerBtns}>

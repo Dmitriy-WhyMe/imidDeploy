@@ -8,7 +8,7 @@ const News = () => {
         <div className={styles.wrap}>
             <div className={styles.flex}>
                 <h2>Новости и статьи</h2>
-                <Link href="#"><button>смотреть больше</button></Link>
+                <Link href="/news"><button>смотреть больше</button></Link>
             </div>
             <NewsSlider />
         </div>

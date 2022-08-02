@@ -95,7 +95,7 @@ const Footer = () => {
                                 <nav>
                                     <Link href="/"><a>Каталог</a></Link>
                                     <Link href="/"><a>Инструментальное производство</a></Link>
-                                    <Link href="/"><a>документация и материалы</a></Link>
+                                    <Link href="/documentation"><a>документация и материалы</a></Link>
                                 </nav>
                             </div>
 

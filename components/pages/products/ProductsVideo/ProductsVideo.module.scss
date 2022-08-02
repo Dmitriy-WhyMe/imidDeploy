@@ -1,0 +1,125 @@
+@import "../../../../css/common";
+
+.block{
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    margin-top: 30px;
+    justify-content: flex-end;
+
+    .pagination{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-transform: uppercase;
+        font-family: $fontDop;
+        @media only screen and (max-width: $mobile) {
+            position: absolute;
+            right: 20px;
+            top: -34px;
+        }
+
+        .paginationAll{
+            color: #CCCCCC;
+        }
+    }   
+
+    .btns{
+        display: flex;
+        align-items: center;
+        gap: 31px;
+        @media only screen and (max-width: $mobile) {
+            gap: 10px;
+            position: absolute;
+            right: 20px;
+            bottom: 185px;
+        }
+    
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: inherit;
+            border: 1px solid white;
+            max-width: 56px;
+            min-width: 56px;
+            height: 56px;
+            transition: 0.2s;
+            &:hover{
+                background: white;
+                svg{
+                    path{
+                        fill: #0E302A;
+                    }
+                }
+            }
+            @media only screen and (max-width: $mobile) {
+                min-width: 45px;
+                height: 45px;
+                max-width: 45px;
+            }
+        }
+    }
+}
+
+.slide{
+    @media only screen and (max-width: $mobile) {
+        height: 280px;   
+    }
+    span{
+        @media only screen and (max-width: $mobile) {
+            height: 280px !important;
+        }
+    }
+    span img{
+        @media only screen and (max-width: $mobile) {
+            object-fit: cover;
+        }
+    }
+}
+
+.small{
+    .imgSmall{
+        width: 200px;
+        height: 100px;
+        @media only screen and (max-width: $mobile) {
+            height: 50px;
+            width: calc(100vw/3);
+        }
+    }
+}
+
+.slide{
+    position: relative;
+    button{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: rgba(14, 48, 42, 0.8);
+        border: 1px solid #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: $mobile) {
+            width: 67px;
+            height: 67px;
+        }
+
+        svg{
+            @media only screen and (max-width: $mobile) {
+                width: 21px;
+                height: 25px;
+            }
+        }
+    }
+}

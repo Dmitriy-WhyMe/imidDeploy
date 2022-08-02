@@ -183,6 +183,20 @@ button {
     opacity: 1 !important;
 }
 
+.slider-thumb > .swiper-wrapper > .swiper-slide-thumb-active {
+    position: relative;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        background: inherit;
+        border: 2px solid #E30613;
+    }
+}
 
 
 

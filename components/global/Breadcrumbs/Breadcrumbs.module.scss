@@ -1,0 +1,41 @@
+@import "../../../css/common";
+
+.link{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    a{
+        font-family: $fontDop;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130%;
+        color: #F5F5F5;
+    }
+
+    .decorative{
+        font-family: $fontDop;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130%;
+        color: #F5F5F5;
+    }
+
+    .titlePage{
+        font-family: $fontDop;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130%;
+        color: #CCCCCC;
+    }
+}
+
+
+
+@media only screen and (max-width: $mobile) {
+    .link {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

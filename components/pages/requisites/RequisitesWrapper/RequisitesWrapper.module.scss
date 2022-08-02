@@ -1,0 +1,13 @@
+@import "../../../../css/common";
+
+.row{
+    display: flex;
+    gap: 25px;
+}
+
+@media only screen and (max-width: $mobile) {
+    .row{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
