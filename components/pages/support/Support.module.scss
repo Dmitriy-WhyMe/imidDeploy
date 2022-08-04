@@ -1,0 +1,89 @@
+@import "../../../css/common";
+
+.support{
+    position: relative;
+
+    .img{
+        max-width: 586px;
+        @media only screen and (max-width: $mobile) {
+            margin-left: -20px;
+            min-width: calc(100% + 40px);
+        }
+    }
+
+    .flex{
+        display: flex;
+        gap: 25px;
+        @media only screen and (max-width: $mobile) {
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+
+    .text{
+        margin-top: -190px;
+        @media only screen and (max-width: $mobile) {
+            margin-top: 15px;
+        }
+    }
+
+    h4{
+        font-family: $fontDop;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        @media only screen and (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 130%;
+            margin-bottom: 20px;
+        }
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        font-family: $fontDop;
+        max-width: 588px;
+        @media only screen and (max-width: $mobile) {
+            font-size: 16px;
+        }
+    }
+
+    ul{
+        max-width: 588px;
+        font-family: $fontDop;
+        margin-left: 20px;
+
+        li{
+            font-family: $fontDop;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            list-style: none;
+            position: relative;
+            @media only screen and (max-width: $mobile) {
+                font-size: 16px;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                background: white;
+                width: 9px;
+                height: 2px;
+                left: -19px;
+                top: 12px;
+                @media only screen and (max-width: $mobile) {
+                    height: 1px;
+                }
+            }
+        }
+    }
+}

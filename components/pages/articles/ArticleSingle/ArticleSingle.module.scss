@@ -1,0 +1,176 @@
+@import "../../../../css/common";
+
+.single{
+    .swiper{
+        max-width: 588px;
+        @media only screen and (max-width: $mobile) {
+            margin-left: -20px;
+            max-width: 100%;
+            overflow: inherit;
+            
+            .description{
+                margin-left: 25px;
+            }
+
+            .imgDesk{
+                height: 393px;
+    
+                span{
+                    height: 393px !important;
+    
+                    img{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    h4{
+        font-family: $fontDop;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        @media only screen and (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 130%;
+        }
+    }
+
+    p {
+        font-family: $fontDop;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        max-width: 588px;
+    }
+
+    .textDop{
+        margin-top: 10px;
+        margin-bottom: 0;
+
+
+        b{        
+            font-size: 20px;
+            line-height: 140%;
+            font-family: $fontDop;
+            font-weight: 500;
+        }
+    }
+
+    .description{
+        font-family: $fontDop;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .flexOne{
+        @media only screen and (max-width: $mobile) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .imgDesk{
+            margin-top: 30px;
+            @media only screen and (max-width: $mobile) {
+                display: none;
+            }
+        }
+
+        .imgMobile{
+            display: none;
+            @media only screen and (max-width: $mobile) {
+                display: block;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .flexTwo{
+
+        .row{
+            margin-top: 30px;
+            display: flex;
+            gap: 25px;
+            @media only screen and (max-width: $mobile) {
+                flex-direction: column;
+                gap: 0px;
+            }
+        }
+    }
+
+    .flexThree{
+        margin-top: 30px;
+
+        .row{
+            display: flex;
+            gap: 25px;
+            @media only screen and (max-width: $mobile) {
+                flex-direction: column;
+                gap: 0px;
+            }
+
+            .imgDesk{
+                max-width: 588px;
+            }
+        }
+    }
+
+    .flexFour{
+        display: flex;
+
+        .row{
+            display: flex;
+            gap: 25px;
+            @media only screen and (max-width: $mobile) {
+                flex-direction: column-reverse;
+                gap: 0px;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+
+            .imgDesk{
+                max-width: 588px;
+            }
+        }
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a{
+            font-family: $fontDop;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            transition: all 0.2s ease;
+            &:hover{
+                text-decoration: underline;
+            }
+            @media only screen and (max-width: $mobile) {
+                font-size: 10px;
+                gap: 20px;
+                svg{
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+}
