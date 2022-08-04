@@ -1,13 +1,39 @@
 @import "../../../../css/common";
 
 .single{
+
+    .Bullets {
+        display: none;
+        text-align: center;
+        font-size: 0;
+        line-height: 0;
+        @media only screen and (max-width: $mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        span {
+          width: 10px;
+          height: 10px;
+          margin: 0 7.51px;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          background: #CCCCCC;
+          opacity: 1;
+          transition: all .2s ease;
+        }
+    }
+
     .swiper{
         max-width: 588px;
         @media only screen and (max-width: $mobile) {
             margin-left: -20px;
             max-width: 100%;
             overflow: inherit;
-            
+
             .description{
                 margin-left: 25px;
             }

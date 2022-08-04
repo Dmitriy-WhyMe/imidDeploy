@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -60,6 +61,12 @@ const ArticleSingle = () => {
 							spaceBetween={10}
 							loop={true}
 							grabCursor={true}
+							pagination={true}
+							modules={[Pagination]}
+							navigation={{
+								prevEl: `.${styles.ArrowLeft}`,
+								nextEl: `.${styles.ArrowRight}`,
+							}}
 							breakpoints={{
 								320: {
 									grabCursor: true,
@@ -96,7 +103,7 @@ const ArticleSingle = () => {
 								</div>
 							</SwiperSlide>
 						</Swiper>
-						<div className={styles.Nav}>
+						<div className={`container ${styles.Nav}`}>
 							<div className={styles.Wrap}>
 								<div className={styles.Bullets} id="single-nav"/>
 							</div>
